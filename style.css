@@ -4,9 +4,12 @@ html {
 }
 body {
    margin: 0px;
+   cursor: url(/images/triangular-logo.png),auto;
+   
 } 
 a {
     text-decoration: none;
+    cursor: url(/images/flame.png),pointer;
 }
 a:visited {
     color: black;
@@ -49,7 +52,7 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
+    border-bottom: black solid 1px;
     
 }
 
@@ -123,7 +126,7 @@ figcaption:hover {
 }
 @keyframes colorflow-background{
     
-    10%{background-color:#264653;}
+
     20%{background-color:#2A9D8F;}
     40%{background-color: #E9C46A;}
     60%{background-color:#F4A261}
