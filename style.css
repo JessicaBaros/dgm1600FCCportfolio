@@ -90,6 +90,14 @@ a:visited {
     100%{color:black;}
 }
 #projects {
+
+    background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, #d9d9d9 1px, transparent 1px),
+    linear-gradient(to bottom, #d9d9d9 2px, transparent 1px);
+  background-attachment:fixed;
+}
+#project-tiles {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -126,10 +134,19 @@ figcaption:hover {
 }
 @keyframes colorflow-background{
     
-
     20%{background-color:#2A9D8F;}
     40%{background-color: #E9C46A;}
     60%{background-color:#F4A261}
     80%{background-color: #E76F51;}
     
+}
+@media screen and (max-width:600px){
+    #projects img {
+        height: 300px;
+    }
+}
+@media screen and (min-width:992px){
+    #welcome-section h1 {
+        font-size: 20em;
+    }
 }
