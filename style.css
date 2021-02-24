@@ -10,6 +10,7 @@ body {
 a {
     text-decoration: none;
     cursor: url(/images/flame.png),pointer;
+    color: black;
 }
 a:visited {
     color: black;
