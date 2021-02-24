@@ -17,7 +17,8 @@ a:visited {
     top: 0;
     width: 100vw;
     padding:0px;
- 
+    z-index: 1;
+    border-bottom: black solid 1px;
 }
 #navbar ul {
     display: flex;
@@ -33,9 +34,14 @@ a:visited {
     font-size: 1.5rem;
     
     font-weight: 700;
+    
  
 }
- 
+#navbar li:hover {
+    animation-name: colorflow-background;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
 
 #welcome-section {
     height:100vh;
@@ -49,7 +55,7 @@ a:visited {
 
 #welcome-section h1{
     color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     font-family: 'Oswald', sans-serif;
     font-size: 5em;
@@ -59,7 +65,68 @@ a:visited {
     margin-left: 40px;
 }
 #welcome-section h2 {
+    
     font-size: 5em;
     margin-top: 0px;
     margin-left: 40px;
+    
+}
+#welcome-section h2:hover {
+    animation-name:colorflow-text;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorflow-text {
+    0% {color:black;}
+    10%{color:#264653;}
+    20%{color:#2A9D8F;}
+    40%{color: #E9C46A;}
+    60%{color:#F4A261}
+    80%{color: #E76F51;}
+    100%{color:black;}
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+#projects img{
+    filter: grayscale(100%);
+    
+}
+figure {
+    filter: drop-shadow(5px 5px 10px grey);
+    transition: all .5s ease;
+}
+figcaption {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    top: -50px;
+}
+#projects img:hover {
+    filter: unset;
+    transition: all 1s ease;
+} 
+figure:hover {
+    transform: scale(1.01);
+    
+}
+figcaption:hover {
+    animation-name: colorflow-background;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorflow-background{
+    
+    10%{background-color:#264653;}
+    20%{background-color:#2A9D8F;}
+    40%{background-color: #E9C46A;}
+    60%{background-color:#F4A261}
+    80%{background-color: #E76F51;}
+    
 }
