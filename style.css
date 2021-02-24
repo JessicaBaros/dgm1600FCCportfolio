@@ -12,7 +12,7 @@ a:visited {
     color: black;
 }
 #navbar {
-
+    background-color: rgba(255, 255, 255, 0.7);
     position: fixed;
     top: 0;
     width: 100vw;
@@ -40,13 +40,26 @@ a:visited {
 #welcome-section {
     height:100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    
 }
 
 #welcome-section h1{
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+    margin-left: 40px;
+}
+#welcome-section h2 {
+    font-size: 5em;
+    margin-top: 0px;
+    margin-left: 40px;
 }
